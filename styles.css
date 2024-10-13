@@ -1,0 +1,171 @@
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Fondo pastel rosado */
+    /* Texto gris oscuro */
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #126879; /* Celeste pastel */
+    color: #deecf6;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el header */
+header:hover, footer:hover {
+    background-color: #12566f; /* Celeste más oscuro */
+    transform: scale(1.02);
+}
+
+header .profile {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #e8f5e9; /* Fondo verde pastel */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Alinea los cuadros uno debajo de otro */
+    align-items: center; /* Centra los cuadros horizontalmente */
+    gap: 20px; /* Espacio entre los cuadros */
+    padding: 20px;
+}
+
+section {
+    width: 80%; /* El ancho del cuadro será el 80% de la página */
+    max-width: 600px; /* El cuadro no será más grande que 600px */
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+ul li strong {
+    font-weight: bold;
+    color: #0e4846;
+}
+
+footer a {
+    color:#ffffff; /* define el color para las lestras de las redes */
+    font-weight: bold; /* define el color para las lestras de las redes */
+}
+
+footer a:hover {
+    color: #ffffff; 
+}
+
+@media (max-width: 600px) {
+    header, footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+:root {
+    --bg-color: #deecf6;
+    --text-color: #4a4a4a;
+    --header-bg: #126879;
+    --link-color: #ffcc80;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header, footer {
+    background-color: var(--header-bg);
+}
+
+a {
+    color: var(--link-color);
+}
+
+/* Quita el subrayodo de los links */
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Al pasar el mouse, cambia de color */
+a:hover {
+    color: #2980b9;
+}
+
+/* Para poner estilo a los iconos */
+.social-link i {
+    margin-right: 8px; /* el espacio que existe entre el icono y la letra */
+    font-size: 20px;   /* El tamaño del icono */
+    vertical-align: middle; /* Alineo los el icono con los textos */
+}
+
+/* Cambia el color de los iconos al pasar el mouse */
+a:hover i {
+    color: #2980b9;
+}
+body {
+    background: linear-gradient(to right, #fce4ec 20%, #ffffff 20%, #ffffff 80%, #fce4ec 80%);
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    border-left: 5px solid #b3e5fc;
+    border-right: 5px solid #b3e5fc;
+    margin: 20px auto;
+    padding: 15px;
+    width: 2000%;
+    max-width: 800px;
+    background-color: #e8f5e9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
